@@ -11,7 +11,7 @@ export default function App() {
       {/* Background Image (Animated) */}
       <div className="fixed inset-0 z-0 bg-black pointer-events-none overflow-hidden">
         <img
-          src="/bull.jpg"
+          src="https://n.uguu.se/OvngzRLP.jpg"
           alt="Bull Background"
           className="absolute inset-0 w-full h-full object-cover origin-center animate-slow-zoom mix-blend-screen opacity-60"
         />
