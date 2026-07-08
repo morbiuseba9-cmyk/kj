@@ -11,7 +11,7 @@ export default function App() {
       {/* Background Image (Animated) */}
       <div className="fixed inset-0 z-0 bg-black pointer-events-none overflow-hidden">
         <img
-          src="/bull.jpg"
+          src="https://d.uguu.se/lFtqySXO.jpg"
           alt="Bull Background"
           className="absolute inset-0 w-full h-full object-cover origin-center animate-slow-zoom mix-blend-screen opacity-60"
         />
@@ -28,7 +28,7 @@ export default function App() {
           <div className="max-w-5xl mx-auto rounded-full px-6 py-3 flex items-center justify-between bg-white/5 backdrop-blur-md border border-white/10">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3 text-white font-semibold text-lg">
-                <img src="/bull.jpg" alt="Logo" className="w-8 h-8 rounded-full object-cover border border-white/20" />
+                <img src="https://d.uguu.se/lFtqySXO.jpg" alt="Logo" className="w-8 h-8 rounded-full object-cover border border-white/20" />
                 <span>$CURB</span>
               </div>
               
