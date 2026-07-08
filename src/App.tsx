@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Globe, ArrowRight, Instagram, Twitter, Copy, User } from 'lucide-react';
+// @ts-ignore
+import bullImage from './assets/images/solana_bull_background_1783521399117.jpg';
 
 export default function App() {
+  useEffect(() => {
+    const link = (document.querySelector("link[rel~='icon']") as HTMLLinkElement) || document.createElement('link');
+    link.type = 'image/jpeg';
+    link.rel = 'icon';
+    link.href = bullImage;
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }, []);
+
   const copyToClipboard = () => {
     navigator.clipboard.writeText("6UGNg119LV6YjSCQ5K6Z6jsLLLetpMJ1vPdhiU8qpump");
   };
@@ -11,7 +21,7 @@ export default function App() {
       {/* Background Image (Animated) */}
       <div className="fixed inset-0 z-0 bg-black pointer-events-none overflow-hidden">
         <img
-          src="/bull.jpg"
+          src={bullImage}
           alt="Bull Background"
           className="absolute inset-0 w-full h-full object-cover origin-center animate-slow-zoom mix-blend-screen opacity-60"
         />
@@ -28,7 +38,7 @@ export default function App() {
           <div className="max-w-5xl mx-auto rounded-full px-6 py-3 flex items-center justify-between bg-white/5 backdrop-blur-md border border-white/10">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3 text-white font-semibold text-lg">
-                <img src="/bull.jpg" alt="Logo" className="w-8 h-8 rounded-full object-cover border border-white/20" />
+                <img src={bullImage} alt="Logo" className="w-8 h-8 rounded-full object-cover border border-white/20" />
                 <span>$CURB</span>
               </div>
               
